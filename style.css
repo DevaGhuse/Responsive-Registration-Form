@@ -1,0 +1,129 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  padding: 20px;
+}
+
+.container {
+  max-width: 650px;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+header {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 3px solid #4b6cb7;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.form .input-box {
+  margin-top: 15px;
+}
+
+.input-box label {
+  font-weight: 500;
+  color: #333;
+}
+
+.input-box input, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  color: #555;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.input-box input:focus, select:focus {
+  border-color: #4b6cb7;
+  box-shadow: 0 0 8px rgba(75, 108, 183, 0.5);
+  outline: none;
+}
+
+.form .column {
+  display: flex;
+  gap: 15px;
+}
+
+.gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.gender-option {
+  display: flex;
+  gap: 20px;
+}
+
+.gender-option label {
+  cursor: pointer;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gender-option input {
+  accent-color: #4b6cb7;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 25px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  box-shadow: 0px 5px 15px rgba(75, 108, 183, 0.5);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-direction: column;
+  }
+  .gender-option {
+    flex-direction: column;
+  }
+}
